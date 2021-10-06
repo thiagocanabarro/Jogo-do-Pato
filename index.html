@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index-style.css">
+            <title>Matar o pato!</title>
+        
+                <script type="text/javascript">
+                        function iniciaJogo(){
+                            var nivel_jogo = document.getElementById('nivel_jogo').value;
+                            window.location.href = 'jogo.html?'+nivel_jogo;
+                        }
+                </script>
+    </head>
+        <body>
+            
+                <div class="menu">
+                    <p>Nível:
+                        <select id="nivel_jogo">
+                            <option value="1">Fácil</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Difícil</option>
+                        </select>
+                    </p>
+                <img src="img/iniciar.png" onclick="iniciaJogo()" />
+                    
+                        <h4>Trabalho do Curso técnico em informática - Robson D. Preuss</h4>
+                        <audio autoplay>
+                            <source src="music/music01.mp3" type="audio/mp3">
+                          </audio>
+                </div>
+        </body>
+</html>

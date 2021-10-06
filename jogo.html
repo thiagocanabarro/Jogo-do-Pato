@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/jogo-style.css">
+  <title>Jogo!</title>
+  <script src="js/jogo.js"></script>
+</head>
+
+	<body onload="iniciaJogo()">
+		
+    <div class="contadores">
+                  
+          <div class="patos">
+            <img src="img/pato.png" />
+            <span id="patos_vivos"></span>
+          </div>
+
+          <div class="patos">
+            <img src="img/pato_morto.png" />
+            <span id="patos_mortos"></span>
+          </div>
+
+          <div class="patos">
+            <span id="cronometro"></span>
+          </div>
+
+          <div>
+            <a href="index.html"><img src="img/restart.png"/></a>
+          </div>
+
+    </div>
+	
+        <div id="cenario"></div>
+  </body>
+</html>
